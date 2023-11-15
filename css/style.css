@@ -34,7 +34,6 @@
 .main-content{
      height:calc(100vh - 80px) ;
      width: calc(100% - 160px);
-     background-color: aquamarine;
     overflow-y: auto;
 }
 
@@ -53,12 +52,19 @@ ul{
      padding: 0px;
     
 }
-.row div{
-     background-color: greenyellow;
-     border: 1px dashed orange;
-     height: 200px;
-}
+     .tasto-piu{
+          border: 1px solid white;
+          border-radius: 10px;
+          margin: 10px;
+     }
 
+   .tasti-bin-pen .btn{
+     border: 1px solid rgb(101, 101, 101);
+     border-radius: 10px;
+     padding: 7px;
+   }
+
+     
 
 @media screen and (max-width:991px){
      .sidebar{
