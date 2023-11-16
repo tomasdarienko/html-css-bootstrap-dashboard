@@ -1,93 +1,112 @@
-*{
+* {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
 }
 
-.navbar{
-     height:80px;
+.navbar {
+     height: 80px;
      background-color: rgb(255, 255, 255);
      border-bottom: 1px solid black;
 }
-.barra-nav{
+
+.barra-nav {
      width: 80%;
 }
-.img-nav{
-     padding-left:10px ;
+
+.img-nav {
+     padding:0px 5px;
+     width: 8%;
+  
+}
+
+.icnon-nav {
      width: 10%;
 }
-.icnon-nav{
-     width: 10%;
+
+.img-nav img {
+     max-width: 100%;
+     max-height: 100%;
 }
-.img-nav img{
-     width: 100%;
-}
-.input-group-text ,.form-control{
+
+.input-group-text,
+.form-control {
      background-color: rgba(211, 211, 211, 0.561);
 }
-.dropdown-toggle::after{
+
+.dropstart .dropdown-toggle::before{
      display: none;
 }
 
 
 
-.main-content{
-     height:calc(100vh - 80px) ;
+.main-content {
+     height: calc(100vh - 80px);
      width: calc(100% - 160px);
-    overflow-y: auto;
+     overflow-y: auto;
 }
 
 
-.sidebar{
+.sidebar {
      height: calc(100vh - 80px);
      width: 160px;
      background-color: rgb(0, 0, 54);
      background-image: url(../img/sidebar-bg.png);
      background-size: cover;
-     display: inlin;
 }
 
-ul{
+ul {
      list-style: none;
      padding: 0px;
-    
-}
-     .tasto-piu{
-          border: 1px solid white;
-          border-radius: 10px;
-          margin: 10px;
-     }
 
-   .tasti-bin-pen .btn{
+}
+
+.tasto-piu {
+     border: 1px solid white;
+     border-radius: 10px;
+     margin: 10px;
+}
+
+.tasti-bin-pen .btn {
      border: 1px solid rgb(101, 101, 101);
      border-radius: 10px;
      padding: 7px;
-   }
-   .offcanvas{
+}
+
+
+
+
+.offcanvas {
      width: 50vw;
-   }
-   .offcanvas input{
-     width: 100%;
+}
+
+.offcanvas input {
+     Width: 100%;
      background-color: #fff;
      border: 1px solid gray;
      border-radius: 5px;
-   }
-   #flexCheckIndeterminate{
-     width: 20px;
-   }
-   .container-fluid{
-     padding: 0px;
-   }
-     
+}
 
-@media screen and (max-width:991px){
-     .sidebar{
-     width: 60px;
+#flexCheckIndeterminate {
+     width: 20px;
+}
+
+
+.bg-05{
+     background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width:991px) {
+     .sidebar {
+          width: 60px;
      }
-     .main-content{        
-          width: calc(100% - 60px);   
+
+     .main-content {
+          width: calc(100% - 60px);
      }
-     .offcanvas{
+
+     .offcanvas {
           width: 100vw;
-        }
+     }
 }

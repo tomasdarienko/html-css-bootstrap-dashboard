@@ -13,10 +13,13 @@
 
 <body>
      <div class="navbar d-flex">
+
           <div class="img-nav">
-               <img class="d-none d-md-block p2" src="./img/logo.svg" alt="">
-               <img class="d-md-none p2" src="./img/mobile-logo.png" alt="">
+               <img class="d-none d-lg-block p2" src="./img/logo.svg" alt="">
+               <img class="d-lg-none p2" src="./img/mobile-logo.png" alt="">
           </div>
+
+
           <form class="container-fluid barra-nav">
                <div class="input-group">
                     <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -24,17 +27,19 @@
                          aria-label="Username" aria-describedby="basic-addon1">
                </div>
           </form>
+
+
           <div class="icnon-nav d-flex justify-content-evenly">
                <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
                <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
                <i class="fa-solid fa-bell text-warning d-none d-lg-block"></i>
-               <div class="dropdown d-lg-none">
-                    <button class="btn dropdown-toggle dropstart" type="button" id="dropdownMenuButton1"
-                         data-bs-toggle="dropdown" aria-expanded="false">
+
+               <div class="btn-group dropstart d-lg-none">
+                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                          <i class="fa-solid fa-bell text-warning"></i>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <ul class="dropdown-menu">
                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list-ul"></i></a></li>
                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-question"></i></a></li>
                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
@@ -46,8 +51,16 @@
           </div>
      </div>
 
+
+
+
+
      <main class="d-flex">
+
+          <!-- sidebar -->
+
           <div class="sidebar text-white d-flex flex-column justify-content-between align-items-center p-3">
+
                <ul>
                     <li class="d-flex justify-content-center fs-5 mt-3"><i class="fa-solid fas fa-house mx-2 mt-1">
 
@@ -59,36 +72,43 @@
                          <i class="fa-solid fa-signal mx-2 mt-1"></i><span class="d-none d-lg-block">Signals</span>
                     </li>
                </ul>
+
                <div>
                     <div class="d-flex justify-content-center fs-5">
                          <i class="fa-solid fa-gear mx-2 mt-1"></i><span class="d-none d-lg-block">Signals</span>
                     </div>
                </div>
           </div>
+
+
+          <!-- main -->
           <div class="main-content">
                <div class="container-fluid">
                     <div class="row d-flex bg-primary text-white">
-                         <div class="col-lg-6 col-md-4 col-sm-12 p-4">
+                        <div class="col-lg-6 col-md-4 col-sm-12 p-4">                        <!--   JUMBO -->
                               <div>
                                    <span class="fs-2">Boolean</span>
-                                   <span class="badge bg-primary">Piano blaze</span>
+                                   <span class="badge bg-05">Piano blaze</span>
                               </div>
                               <span>
-                                   <span class="badge bg-primary">3 App</span>
+                                   <span class="badge bg-05">3 App</span>
                                    <span>>></span>
-                                   <span class="badge bg-primary d-lg-none">+</span>
+                                   <span class="badge bg-05 d-lg-none">+</span>
                               </span>
                               <span class="d-none d-lg-inline">
-                                   <span class="badge bg-primary">Boolean mobile app Boolean</span>
-                                   <span class="badge bg-primary">Boolean mobile app Boolean</span>
-                                   <span class="badge bg-primary">Boolean mobile app Boolean</span>
+                                   <span class="badge bg-05">Boolean mobile app Boolean</span>
+                                   <span class="badge bg-05">Boolean mobile app Boolean</span>
+                                   <span class="badge bg-05">Boolean mobile app Boolean</span>
                               </span>
 
                          </div>
+
                          <div class="col-lg-3 col-md-4 col-sm-12 p-4">
                               <div class="">Studenti online negli ultimi 30 minuti</div>
                               <div class="fs-2">125</div>
                          </div>
+                         
+
                          <div class="col-lg-3 col-md-4 col-12 text-md-end p-4 order-first order-md-last">
                               <span>Nuovo Studente</span>
 
@@ -99,9 +119,13 @@
 
                     </div>
                     <div class="row">
-                         <div class="col-12 g-3 col-lg-8">
+                         <div class="col-12 col-lg-8 g-3 p-4">
                               <div class="border rounded p-2">
-                                   <table class="table">
+
+                                   <!-- TABELLA -->
+
+
+                                   <table class="table table-hover">
                                         <thead>
                                              <td class="fs-5">Prossime classi</td>
                                              <td></td>
@@ -199,7 +223,11 @@
                                         </tbody>
                                    </table>
                               </div>
-                              <div class="faq border rounded p-2 mt-3">
+
+                              <!-- ACCORDION -->
+
+
+                              <div class="border rounded p-2 mt-3">
                                    <div class="fs-2 border-bottom">F.A.Q</div>
                                    <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div class="accordion-item">
@@ -266,7 +294,16 @@
                                    </div>
                               </div>
                          </div>
+
+
+                         <!-- COLONNA DI DESTRA -->
+
+                           
                          <div class="col-12 col-lg-4">
+
+                              <!-- TODO -->
+
+
                               <div class="faq border rounded p-2 mt-3">
                                    <div class="fs-2 border-bottom">Todo</div>
                                    <div class="border rounded p-2">
@@ -293,7 +330,10 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="faq border rounded p-2 mt-3">
+
+                              <!-- CARD -->
+
+                              <div class="border rounded p-2 mt-3">
                                    <div class="card">
                                         <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -318,10 +358,10 @@
                </div>
 
           </div>
-          </div>
+         
 
      </main>
-
+                              <!-- OFFCANVAS -->
 
      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
           aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -333,6 +373,7 @@
           <div class="offcanvas-body">
                <div class="container-fluid">
                     <div class="row">
+
                          <div class="col-12 col-md-6">
                               <label for="Nome" class="form-label">Nome</label>
                               <div>
@@ -346,8 +387,11 @@
                                    <input type="text" id="Cognome" name="Cognome" class="my-input" required>
                               </div>
                          </div>
+
+
+
                          <div class="col-12 col-md-6">
-                              <form class="container-fluid">
+                              <form >
                                    <label for="email" class="form-label">email</label>
                                    <div class="input-group mb-3">
                                         <span class="input-group-text" id="basic-addon1">@</span>
@@ -357,7 +401,7 @@
                               </form>
                          </div>
                          <div class="col-12 col-md-6">
-                              <form class="container-fluid">
+                              <form >
                                    <label for="email" class="form-label">Conferma email</label>
                                    <div class="input-group mb-3">
                                         <span class="input-group-text" id="basic-addon1">@</span>
@@ -414,8 +458,7 @@
                          <div class="col-12">
                               <div class="form-check">
                                    <div class="form-check">
-                                        <input class="checkbox" type="checkbox" value=""
-                                             id="flexCheckIndeterminate">
+                                        <input class="checkbox" type="checkbox" value="" id="flexCheckIndeterminate">
                                         <label class="form-check-label" for="flexCheckIndeterminate">
                                              Sleziona per proseguire
                                         </label>
